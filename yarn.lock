@@ -1572,11 +1572,6 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@radix-ui/colors@^0.1.8":
-  version "0.1.8"
-  resolved "https://repo.plus4u.net/operatorGate/repository/public-javascript/@radix-ui/colors/-/colors-0.1.8.tgz#b08c62536fc462a87632165fb28e9b18f9bd047e"
-  integrity sha512-jwRMXYwC0hUo0mv6wGpuw254Pd9p/R6Td5xsRpOmaWkUHlooNWqVcadgyzlRumMq3xfOTXwJReU0Jv+EIy4Jbw==
-
 "@radix-ui/primitive@1.0.0":
   version "1.0.0"
   resolved "https://repo.plus4u.net/operatorGate/repository/public-javascript/@radix-ui/primitive/-/primitive-1.0.0.tgz#e1d8ef30b10ea10e69c76e896f608d9276352253"
@@ -1647,11 +1642,6 @@
     "@radix-ui/react-compose-refs" "1.0.0"
     "@radix-ui/react-primitive" "1.0.1"
     "@radix-ui/react-use-callback-ref" "1.0.0"
-
-"@radix-ui/react-icons@^1.1.1":
-  version "1.1.1"
-  resolved "https://repo.plus4u.net/operatorGate/repository/public-javascript/@radix-ui/react-icons/-/react-icons-1.1.1.tgz#38d2aa548035dd3b799c169bd17177b1cec3152b"
-  integrity sha512-xc3wQC59rsFylVbSusQCrrM+6695ppF730Q6yqzhRdqDcRNWIm2R6ngpzBoSOQMcwnq4p805F+Gr7xo4fmtN1A==
 
 "@radix-ui/react-id@1.0.0":
   version "1.0.0"
@@ -9423,11 +9413,6 @@ wcwidth@^1.0.1:
   integrity sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==
   dependencies:
     defaults "^1.0.3"
-
-web-vitals@^2.1.4:
-  version "2.1.4"
-  resolved "https://repo.plus4u.net/operatorGate/repository/public-javascript/web-vitals/-/web-vitals-2.1.4.tgz#76563175a475a5e835264d373704f9dde718290c"
-  integrity sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"

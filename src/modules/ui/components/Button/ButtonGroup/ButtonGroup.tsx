@@ -6,7 +6,7 @@ import { Icon } from "../../Icon";
 
 export interface IButtonGroupItem {
   title: string;
-  icon: FC<{ className?: string }>;
+  icon?: FC<{ className?: string }>;
 }
 
 interface IButtonGroup {
@@ -28,7 +28,7 @@ export function ButtonGroup({ buttons, onClick }: IButtonGroup) {
           onClick={handleClick}
         >
           {buttonItem.title}
-          <Icon icon={buttonItem.icon} />
+          {buttonItem.icon ? <Icon icon={buttonItem.icon} /> : null}
         </Button>
       ))}
     </>

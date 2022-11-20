@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@radix-ui/colors": "^0.1.8",
+    "@radix-ui/react-dialog": "^1.0.2",
+    "@radix-ui/react-icons": "^1.1.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,6 +13,7 @@
     "@types/node": "^16.18.3",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "madge": "^5.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -17,6 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "check-circular-modules": "madge --circular src",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

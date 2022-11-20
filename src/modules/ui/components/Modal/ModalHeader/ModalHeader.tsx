@@ -1,19 +1,21 @@
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 
-import { Icon } from "../../Icon";
+import type { ReactNode } from "react";
 
-import { FC } from "react";
+import { Button, IButtonGroupItem } from "../../Button";
 
 interface IModalHeader {
   title: string;
-  icon: FC<{ className?: string }>;
+  icon: ReactNode;
+  buttons?: IButtonGroupItem[];
 }
 
-export function ModalHeader({ title, icon }: IModalHeader) {
+export function ModalHeader({ title, icon, buttons }: IModalHeader) {
   return (
-    <header>
+    <header className={"ModalHeader"}>
       <DialogPrimitive.DialogTitle>{title}</DialogPrimitive.DialogTitle>
-      <Icon icon={icon} />
+      {icon}
+      {buttons ? <Button.Group buttons={buttons} /> : null}
     </header>
   );
 }

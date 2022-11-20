@@ -1,22 +1,31 @@
-import { Check, Modal } from "modules/ui";
-import React from "react";
+import { Modal } from "modules/ui";
 
 export function Modal1() {
-  const footerButtons = [
+  const buttons = [
     {
-      title: "Button 1",
-      icon: Check,
+      title: "Button",
+    },
+    {
+      title: "Button",
+    },
+    {
+      title: "Button",
+    },
+    {
+      title: "Button",
     },
   ];
+
   return (
     <Modal dialogTrigger={<button>Open</button>}>
-      <Modal.Header title={"Title"} icon={Check} />
+      <Modal.Header
+        title={"Close"}
+        icon={<Modal.Close>X</Modal.Close>}
+        buttons={buttons}
+      />
       <h2>Content</h2>
       <p>Lorem impsum...</p>
-      <Modal.Footer
-        description={"Description of modal"}
-        buttons={footerButtons}
-      />
+      <Modal.Footer buttons={buttons} description={"Description of modal"} />
     </Modal>
   );
 }

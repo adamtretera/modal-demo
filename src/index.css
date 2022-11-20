@@ -16,6 +16,27 @@ body {
     align-items: center;
 }
 
+button {
+    all:unset;
+    background-color: #5b5be7;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+button:hover {
+    background-color: #200b73;
+}
+button:focus {
+    outline: 2px #200b73 solid;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -73,14 +94,30 @@ code {
 }
 
 .Icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:30px;
-    height: 30px;
-}
 
-.IconBox {
     width: 100%;
     height: 100%;
 }
+
+
+.IconBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20px;
+    height: 20px;
+}
+
+.ModalHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.ModalFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+

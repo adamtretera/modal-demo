@@ -6,14 +6,16 @@ import type { IButtonGroupItem } from "../../Button";
 
 interface IModalFooter {
   description: string;
-  buttons: IButtonGroupItem[];
+  buttons?: IButtonGroupItem[];
 }
 
 export function ModalFooter({ description, buttons }: IModalFooter) {
   return (
-    <footer>
-      <DialogPrimitive.Description>{description}</DialogPrimitive.Description>
-      <Button.Group buttons={buttons} />
+    <footer className={"ModalFooter"}>
+      {description ? (
+        <DialogPrimitive.Description>{description}</DialogPrimitive.Description>
+      ) : null}
+      {buttons ? <Button.Group buttons={buttons} /> : null}
     </footer>
   );
 }
